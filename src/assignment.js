@@ -14,10 +14,10 @@ const assignment = {};
  * @param {Number} destination is the stopping number
  * @returns number the sum of the numbers from 1 to destination
  */
-function sumOfNumbersTo(arr) {
+function sumOfNumbersTo(destination) {
     let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-      sum +=arr[i]
+    for(let i = 0; i < destination.length; i++){
+      sum +=destination[i]
     } 
     return sum
 }
@@ -57,7 +57,7 @@ function countEvenNumbersWithin(destination) {
 }
 
 const numberArray = [1,2,3,4,5,6,7,8,9,10];
-const even Count = countEvenNumbersWithin(numberArray);
+const evenCount = countEvenNumbersWithin(numberArray);
 console.log(evenCount);
 
 // assignment.countEvenNumbersWithin = countEvenNumbersWithin;
@@ -78,7 +78,7 @@ console.log(evenCount);
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers){
-    const fahrenheitTemps = celsiusTemps.map(tempC * 9/5 + 32));
+    const fahrenheitTemps = arrayOfNumbers.map(tempC * 9/5 + 32));
     return fahrenheitTemps;
 }
 
