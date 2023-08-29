@@ -26,7 +26,7 @@ for (let i = 0; i < 10; i++) {
     array;
 } 
 const sum = sumOfNumbersTo(array);
-console.log(sum);
+
 
 
 
@@ -58,7 +58,6 @@ function countEvenNumbersWithin(destination) {
 
 const numberArray = [1,2,3,4,5,6,7,8,9,10];
 const evenCount = countEvenNumbersWithin(numberArray);
-console.log(evenCount);
 
 // assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
@@ -83,8 +82,7 @@ function celsiusToFahrenheit(arrayOfNumbers){
 }
 
 const celsiusTemperatures = [51.21,23,0,-55,100];
-const fahrenheitTemperatures = convertToFahrenheit(celsiusTemperatures) 
-console.log(fahrenheitTemperatures);
+const fahrenheitTemperatures = celsiusToFahrenheit(celsiusTemperatures)
 
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
