@@ -78,12 +78,12 @@ console.log(evenCount);
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers){
-    const fahrenheitTemps = arrayOfNumbers.map(tempC * 9/5 + 32));
+    const fahrenheitTemps = arrayOfNumbers.map(tempC =>Math.round(tempC * 9/5 + 32));
     return fahrenheitTemps;
 }
 
 const celsiusTemperatures = [51.21,23,0,-55,100];
-const fahrenheitTemperatures = convertToFahrenheit (celsiusTemperatures) 
+const fahrenheitTemperatures = convertToFahrenheit(celsiusTemperatures) 
 console.log(fahrenheitTemperatures);
 
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
