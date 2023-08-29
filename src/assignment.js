@@ -53,12 +53,7 @@ function countEvenNumbersWithin(destination) {
        } 
     } 
 
-    return {
-        // property value shorthand
-        // when the property name and the value name are the same
-        // you can just write the property name in your object
-        count;
-    };
+    return count;
 }
 
 const numberArray = [1,2,3,4,5,6,7,8,9,10];
