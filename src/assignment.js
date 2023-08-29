@@ -14,10 +14,21 @@ const assignment = {};
  * @param {Number} destination is the stopping number
  * @returns number the sum of the numbers from 1 to destination
  */
-function sumOfNumbersTo(destination) {
+function sumOfNumbersTo(arr) {
     let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+      sum +=arr[i]
+    } 
     return sum
 }
+const array = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+for (let i = 0; i < 10; i++) {
+    array;
+} 
+const sum = sumOfNumbersTo(array);
+console.log(sum);
+
+
 
 
 // assignment.sumOfNumbersTo = sumOfNumbersTo;
@@ -35,19 +46,24 @@ function sumOfNumbersTo(destination) {
 function countEvenNumbersWithin(destination) {
     // Write your code here
     // get the number from 1 to destination
-    let sum = 0;
     let count = 0;
-    let arrayOfEvenNumbers = [];
+    for(let i = 0; i < destination.length; i++){
+       if(destination[1] % 2 === 0){ 
+           count++
+       } 
+    } 
 
     return {
         // property value shorthand
         // when the property name and the value name are the same
         // you can just write the property name in your object
-        count,
-        sum,
-        arrayOfEvenNumbers
+        count;
     };
 }
+
+const numberArray = [1,2,3,4,5,6,7,8,9,10];
+const even Count = countEvenNumbersWithin(numberArray);
+console.log(evenCount);
 
 // assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
@@ -66,11 +82,14 @@ function countEvenNumbersWithin(destination) {
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    let result = [];
-
-    return result;
+function celsiusToFahrenheit(arrayOfNumbers){
+    const fahrenheitTemps = celsiusTemps.map(tempC * 9/5 + 32));
+    return fahrenheitTemps;
 }
+
+const celsiusTemperatures = [51.21,23,0,-55,100];
+const fahrenheitTemperatures = convertToFahrenheit (celsiusTemperatures) 
+console.log(fahrenheitTemperatures);
 
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
